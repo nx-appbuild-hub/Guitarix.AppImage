@@ -1,0 +1,1 @@
+# Guitarix.AppImage
