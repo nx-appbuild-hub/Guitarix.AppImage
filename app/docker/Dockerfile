@@ -11,6 +11,9 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 FROM ubuntu:20.04
 
+ARG TOKEN
+ENV TOKEN=${TOKEN}
+
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ENV DEBIAN_FRONTEND=noninteractive 
 
@@ -52,17 +55,3 @@ RUN apt-get install -y libeigen3-dev
 RUN apt-get install -y fonts-roboto
 RUN apt-get install -y libbluetooth-dev
 RUN apt-get install -y libavcodec-dev
-# RUN apt-get install -y 
-# RUN apt-get install -y 
-# RUN apt-get install -y 
-# RUN apt-get install -y 
-# RUN apt-get install -y 
-# RUN apt-get install -y 
-# RUN apt-get install -y 
-# RUN apt-get install -y 
-# RUN apt-get install -y 
-# RUN apt-get install -y 
-# RUN apt-get install -y 
-# RUN apt-get install -y 
-# RUN apt-get install -y 
-# RUN apt-get install -y 
